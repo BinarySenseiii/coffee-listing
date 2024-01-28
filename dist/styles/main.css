@@ -22,6 +22,8 @@
 	--spacer-xs: 1rem;
 	--spacer-sm: 2rem;
 
+	--spacer-grid: 2rem;
+
 	--shadow-default: 0px 4px 16px rgba(17, 17, 26, 0.1),
 		0px 8px 32px rgba(17, 17, 26, 0.051);
 }
@@ -45,8 +47,8 @@
 }
 
 .grid {
-	grid-template-columns: repeat(auto-fill, minmax(16.25rem, 1fr));
-	gap: 2.1875rem;
+	grid-template-columns: repeat(auto-fill, minmax(14.0625rem, 1fr));
+	gap: var(--spacer-grid);
 }
 
 .grid > .grid__item {
