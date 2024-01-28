@@ -32,7 +32,6 @@
 }
 
 .container {
-	min-height: 100dvh;
 	background: hsl(var(--color-dark-02));
 	width: min(80%, 80rem);
 	margin: -8.875rem auto 8.875rem;
@@ -42,7 +41,7 @@
 .container__inner {
 	width: min(90%, 62rem);
 	margin-inline: auto;
-	padding-block: 5.3125rem;
+	padding-block: 5.1875rem;
 }
 
 .grid {
@@ -101,15 +100,25 @@
 	font-weight: 600;
 }
 
-.card__rating {
+.card__rating,
+.card__status {
 	color: hsl(var(--color-offwhite));
 	font-size: 0.875rem;
 }
 
+.card__rating--disabled,
+.card__votes {
+	color: hsl(var(--color-gray));
+}
+
 .card__votes {
 	font-size: 0.75rem;
-	color: hsl(var(--color-gray));
 	margin-inline-start: 0.2rem;
+}
+
+.card__status {
+	color: hsl(var(--color-crimson));
+	font-weight: 500;
 }
 
 .badge {
