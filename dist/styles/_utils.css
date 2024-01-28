@@ -16,6 +16,10 @@
 	display: -ms-grid;
 	display: grid;
 }
+
+.gap-xxs {
+	gap: 0.4rem;
+}
 .flex {
 	display: -webkit-box;
 	display: -ms-flexbox;

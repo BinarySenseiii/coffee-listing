@@ -40,7 +40,7 @@
 }
 
 .container__inner {
-	width: min(90%, 60rem);
+	width: min(90%, 62rem);
 	margin-inline: auto;
 	padding-block: 5.3125rem;
 }
@@ -55,6 +55,7 @@
 }
 
 .card {
+	padding: 0.3rem;
 	transition: all var(--duration) var(--ease);
 	overflow: hidden;
 }
@@ -90,6 +91,25 @@
 .card__title {
 	color: hsl(var(--color-offwhite));
 	font-size: 1rem;
+}
+
+.card__price {
+	background: hsl(var(--color-light-green));
+	padding: 0.2rem 0.7rem;
+	border-radius: var(--rounded-xs);
+	font-size: 0.725rem;
+	font-weight: 600;
+}
+
+.card__rating {
+	color: hsl(var(--color-offwhite));
+	font-size: 0.875rem;
+}
+
+.card__votes {
+	font-size: 0.75rem;
+	color: hsl(var(--color-gray));
+	margin-inline-start: 0.2rem;
 }
 
 .badge {
