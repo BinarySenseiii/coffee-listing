@@ -16,25 +16,96 @@
 	--ff-primary: 'DM Sans';
 	--ff-fallback: sans-serif;
 
+	--rounded-xs: 0.4rem;
+	--rounded-sm: 1rem;
+
+	--spacer-xs: 1rem;
+	--spacer-sm: 2rem;
+
 	--shadow-default: 0px 4px 16px rgba(17, 17, 26, 0.1),
 		0px 8px 32px rgba(17, 17, 26, 0.051);
+}
+
+.banner {
+	background: url('../../assets/bg-cafe.jpg') bottom left/cover;
+	height: 18.75rem;
 }
 
 .container {
 	min-height: 100dvh;
 	background: hsl(var(--color-dark-02));
-	width: min(100%, 80rem);
-	margin-inline: auto;
-	padding-inline: 2rem;
+	width: min(80%, 80rem);
+	margin: -8.875rem auto 8.875rem;
+	border-radius: var(--rounded-sm);
 }
 
-/* grid */
+.container__inner {
+	width: min(90%, 60rem);
+	margin-inline: auto;
+	padding-block: 5.3125rem;
+}
+
 .grid {
-	grid-template-columns: repeat(auto-fill, minmax(19.5rem, 1fr));
-	gap: 2rem;
+	grid-template-columns: repeat(auto-fill, minmax(16.25rem, 1fr));
+	gap: 2.1875rem;
 }
 
 .grid > .grid__item {
-	background: hsl(var(--color-gray));
 	width: 100%;
+}
+
+.card {
+	transition: all var(--duration) var(--ease);
+	overflow: hidden;
+}
+
+.card:hover,
+.card:focus {
+	outline: 1px solid hsl(var(--color-light-orange));
+	outline-offset: 0.7rem;
+	border-radius: var(--rounded-sm);
+}
+
+.card:hover .card__image,
+.card:focus .card__image {
+	transform: scale(1.3) rotate(10deg);
+}
+
+.card__header {
+	height: 10rem;
+	overflow: hidden;
+	border-radius: var(--rounded-sm);
+}
+
+.card__header .card__image {
+	transition: all var(--duration) var(--ease);
+	object-fit: cover;
+}
+
+.card__content > *:not(:first-child),
+.card__content {
+	margin-top: 0.8rem;
+}
+
+.card__title {
+	color: hsl(var(--color-offwhite));
+	font-size: 1rem;
+}
+
+.badge {
+	background: hsl(var(--color-light-orange));
+	height: 1.5625rem;
+	width: max-content;
+	padding-inline: 0.6rem;
+	font-size: 0.625rem;
+	font-weight: 700;
+	display: grid;
+	place-content: center;
+	border-radius: var(--rounded-xs);
+}
+
+.badge--floated {
+	position: absolute;
+	top: 0.5rem;
+	left: 0.5rem;
 }

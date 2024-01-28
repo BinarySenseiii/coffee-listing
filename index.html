@@ -16,35 +16,75 @@
 			rel="stylesheet"
 		/>
 	</head>
-	<body style="margin-block: 4rem">
-		<section class="relative">
-			<img
-				src="./assets/bg-cafe.jpg"
-				alt="A tranquil cafe bathed in natural
-			light, featuring cozy wooden decor and the comforting aroma of freshly
-			brewed coffee"
-			/>
 
-			<main class="container shadow-md">
+	<body>
+		<header class="banner"></header>
+		<main class="container shadow-md">
+			<div class="container__inner">
 				<div class="grid">
 					<div class="grid__item">
-						<div class="card">
-							<div class="relative">
-								<img src="" />
-								<div class="card__badge"></div>
-							</div>
-
-							<div class="space-y-2">
-								<div class="flex items-center space-between">
-									<h2 class="card__title"></h2>
-									<h2 class="card__price"></h2>
+						<div class="card" tabindex="0">
+							<div class="relative card__header">
+								<img
+									src="https://csyxkpbavpcrhwqhcpyy.supabase.co/storage/v1/object/public/assets/coffee-challenge/cappuccino.jpg"
+									alt="Cappuccino image not found"
+									class="box-full card__image"
+								/>
+								<div class="badge badge--floated" aria-label="Popular">
+									Popular
 								</div>
-								<div></div>
+							</div>
+							<div class="card__content">
+								<div class="flex items-center space-between">
+									<h2 class="card__title">Cappuccino</h2>
+									<span class="card__price">$5.20</span>
+								</div>
+								<div class="flex items-center">
+									<img
+										src="./assets/vector/Star_fill.svg"
+										alt="Star icon not found"
+										aria-hidden="true"
+									/>
+									<h3 class="card__rating">
+										4.7 <span class="card__votes">(65 votes)</span>
+									</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="grid__item">
+						<div class="card" tabindex="0">
+							<div class="relative card__header">
+								<img
+									src="https://csyxkpbavpcrhwqhcpyy.supabase.co/storage/v1/object/public/assets/coffee-challenge/cappuccino.jpg"
+									alt="Cappuccino image not found"
+									class="box-full card__image"
+								/>
+								<div class="badge badge--floated" aria-label="Popular">
+									Popular
+								</div>
+							</div>
+							<div class="card__content">
+								<div class="flex items-center space-between">
+									<h2 class="card__title">Cappuccino</h2>
+									<span class="card__price">$5.20</span>
+								</div>
+								<div class="flex items-center">
+									<img
+										src="./assets/vector/Star_fill.svg"
+										alt="Star icon not found"
+										aria-hidden="true"
+									/>
+									<h3 class="card__rating">
+										4.7 <span class="card__votes">(65 votes)</span>
+									</h3>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</main>
-		</section>
+			</div>
+		</main>
 	</body>
 </html>
