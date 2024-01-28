@@ -1,0 +1,22 @@
+.shadow-md {
+	-webkit-box-shadow: var(--shadow-default);
+	box-shadow: var(--shadow-default);
+}
+
+.heading-level-01 {
+	font-size: 2rem;
+	font-size: clamp(var(--heading-1));
+}
+
+.relative {
+	position: relative;
+}
+
+.grid {
+	display: -ms-grid;
+	display: grid;
+}
+
+.space-y-2 {
+	gap: 2rem;
+}

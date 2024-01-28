@@ -1,0 +1,40 @@
+:root {
+	--color-dark-01: 210, 11%, 7%;
+	--color-dark-02: 210, 7%, 11%;
+	--color-gray: 212, 6%, 46%;
+	--color-light-orange: 40, 89%, 69%;
+	--color-light-green: 143, 40%, 82%;
+	--color-offwhite: 34, 89%, 96%;
+	--color-crimson: 9, 80%, 65%;
+
+	--duration: 0.4s;
+	--ease: cubic-bezier(0.45, 0.05, 0.55, 0.95);
+
+	--heading-1: 1.8rem, 1.6rem + 0.5vw, 2rem;
+	--lh-default: 1.5;
+
+	--ff-primary: 'DM Sans';
+	--ff-fallback: sans-serif;
+
+	--shadow-default: 0px 4px 16px rgba(17, 17, 26, 0.1),
+		0px 8px 32px rgba(17, 17, 26, 0.051);
+}
+
+.container {
+	min-height: 100dvh;
+	background: hsl(var(--color-dark-02));
+	width: min(100%, 80rem);
+	margin-inline: auto;
+	padding-inline: 2rem;
+}
+
+/* grid */
+.grid {
+	grid-template-columns: repeat(auto-fill, minmax(19.5rem, 1fr));
+	gap: 2rem;
+}
+
+.grid > .grid__item {
+	background: hsl(var(--color-gray));
+	width: 100%;
+}
