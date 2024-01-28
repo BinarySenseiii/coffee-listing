@@ -3,11 +3,6 @@
 	box-shadow: var(--shadow-default);
 }
 
-.heading-level-01 {
-	font-size: 2rem;
-	font-size: clamp(var(--heading-1));
-}
-
 .relative {
 	position: relative;
 }
@@ -20,13 +15,15 @@
 .gap-xxs {
 	gap: 0.4rem;
 }
-.flex {
+.flex,
+.centered {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 }
 
-.items-center {
+.items-center,
+.centered {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
@@ -36,6 +33,12 @@
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
+}
+
+.centered {
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 }
 
 .box-full {

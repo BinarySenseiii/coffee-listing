@@ -90,3 +90,9 @@ textarea:not([rows]) {
 :target {
 	scroll-margin-block: 5ex;
 }
+
+button {
+	background: none;
+	border: 0;
+	outline: 0;
+}

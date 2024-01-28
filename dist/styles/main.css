@@ -35,7 +35,7 @@
 
 .container {
 	background: hsl(var(--color-dark-02));
-	width: min(80%, 80rem);
+	width: min(90%, 80rem);
 	margin: -8.875rem auto 8.875rem;
 	border-radius: var(--rounded-sm);
 }
@@ -109,7 +109,8 @@
 }
 
 .card__rating--disabled,
-.card__votes {
+.card__votes,
+.ctx__description {
 	color: hsl(var(--color-gray));
 }
 
@@ -121,6 +122,36 @@
 .card__status {
 	color: hsl(var(--color-crimson));
 	font-weight: 500;
+}
+
+.ctx {
+	max-width: 31.25rem;
+	text-align: center;
+	margin-inline: auto;
+	z-index: 2;
+}
+
+.ctx__title {
+	font-size: 2rem;
+	font-size: clamp(var(--heading-1));
+	color: hsl(var(--color-offwhite));
+}
+
+.ctx__description {
+	margin-block-start: 0.7rem;
+	font-weight: 600;
+}
+
+.ctx__line {
+	position: absolute;
+	top: -3.3125rem;
+	right: -0.25rem;
+	z-index: -1;
+}
+
+.filters {
+	margin: 1.375rem 0 2.6875rem;
+	gap: var(--spacer-xs);
 }
 
 .badge {
@@ -139,4 +170,27 @@
 	position: absolute;
 	top: 0.5rem;
 	left: 0.5rem;
+}
+
+/* components */
+.btn {
+	transition: all var(--duration) var(--ease);
+
+	padding: 5px 15px;
+	cursor: pointer;
+	border-radius: var(--rounded-xs);
+	color: hsl(var(--color-offwhite));
+	font-weight: 600;
+}
+
+.btn--active {
+	background: hsl(var(--color-gray));
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+	background: hsl(var(--color-gray));
+	outline-offset: 5px;
+	outline: 1px solid hsl(var(--color-gray));
 }
