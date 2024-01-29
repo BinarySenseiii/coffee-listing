@@ -41,7 +41,7 @@
 }
 
 .container__inner {
-	width: min(90%, 62rem);
+	width: min(85%, 62rem);
 	margin-inline: auto;
 	padding-block: 5.1875rem;
 }
@@ -193,4 +193,28 @@
 	background: hsl(var(--color-gray));
 	outline-offset: 5px;
 	outline: 1px solid hsl(var(--color-gray));
+}
+
+/* responsive design */
+@media screen and (max-width: 31.25rem) {
+	.banner {
+		height: 10rem;
+	}
+
+	.container {
+		margin: -4.875rem auto 4.875rem;
+	}
+
+	.container__inner {
+		padding: 5.1875rem 0 2rem;
+	}
+
+	.btn,
+	.ctx__description {
+		font-size: 0.875rem;
+	}
+
+	.filters {
+		margin-block-end: 1.6875rem;
+	}
 }
